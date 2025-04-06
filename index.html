@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Untuk Kamu...</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      position: relative;
+    }
+
+    .card, .portfolio, .puisi, .pantun {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 800px;
+      margin-bottom: 40px;
+      z-index: 2;
+    }
+
+    h1, h2, h3 {
+      color: #ff4d6d;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-style: italic;
+    }
+
+    h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 12px 0;
+    }
+
+    a {
+      display: inline-block;
+      background: #25d366;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 10px;
+      transition: 0.3s;
+      margin-top: 20px;
+    }
+
+    a:hover {
+      background: #1ebe5d;
+    }
+
+    .portfolio ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .portfolio li {
+      margin: 10px 0;
+      font-size: 18px;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    .portfolio li::before {
+      content: "❤️";
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }
+
+    .heart {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      background: red;
+      transform: rotate(45deg);
+      animation: float 6s infinite ease-in;
+      opacity: 0.7;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: red;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(45deg);
+        opacity: 0.9;
+      }
+      100% {
+        transform: translateY(-10vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="puisi">
+      <h3>Puisi: Untuk Kamu yang Diam-diam Aku Sayang</h3>
+      <p>Aku tak pandai berkata indah,</p>
+      <p>Tapi setiap tatapmu buat dunia jadi lebih ramah.</p>
+      <p>Senyummu, seperti mentari setelah hujan,</p>
+      <p>Membasuh luka, menghangatkan harapan.</p>
+      <p>Aku tak ingin jadi siapa-siapa,</p>
+      <p>Kecuali seseorang yang kamu cari saat dunia mulai lelah.</p>
+      <p>Kalau cinta itu bahasa,</p>
+      <p>Maka aku ingin kalimatnya berhenti di namamu.</p>
+      <p>Bolehkah aku menjadi cerita dalam hidupmu?</p>
+      <p>Bukan bab pertama, tapi yang tak pernah kamu tutup.</p>
+    </div>
+
+    <div class="pantun">
+      <h3>Pantun Cinta</h3>
+      <p>Jalan-jalan ke taman bunga,</p>
+      <p>Lihat kupu menari-nari.</p>
+      <p>Kalau kamu bilang 'iya',</p>
+      <p>Jantungku pasti loncat dari tadi!</p>
+      <br>
+      <p>Pagi hari minum teh manis,</p>
+      <p>Disajikan sambil tersenyum manja.</p>
+      <p>Kamu itu spesial dan romantis,</p>
+      <p>Boleh gak aku jadi pacarmu aja?</p>
+    </div>
+
+    <div class="card">
+      <h1>Untuk Kamu yang Spesial</h1>
+      <h2>“Dari detik pertama aku kenal kamu, hati ini gak pernah sama lagi.”</h2>
+      <p>Aku gak tahu cara paling sempurna buat ngungkapin ini...</p>
+      <p>Tapi aku tahu, setiap harinya aku makin jatuh cinta sama senyuman kamu.</p>
+      <p>Maukah kamu jadi alasan aku bahagia setiap hari?</p>
+      <p>Aku suka kamu. Jadi pacarku, ya?</p>
+      <a href="https://wa.me/6285723956572?text=ya%20aku%20mau%20jadi%20pacar%20kamuu%20sayang%20%F0%9F%A5%B0%F0%9F%A5%B0" target="_blank">
+        Iya, aku mau!
+      </a>
+    </div>
+
+    <div class="portfolio">
+      <h3>Portofolio Cintaku</h3>
+      <ul>
+        <li>Selalu ingat hari spesial kamu (termasuk hari kita ketemu).</li>
+        <li>Pernah nulis puisi cuma buat kamu, tapi gak berani kirim.</li>
+        <li>Siap nemenin kamu kapan pun, meski cuma dengerin cerita kamu.</li>
+        <li>Bisa bikin kamu ketawa tiap hari (atau minimal senyum malu-malu).</li>
+        <li>Hati ini cuma buat satu orang: kamu.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Heart animation -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }
+    setInterval(createHeart, 300);
+  </script>
+
+  <!-- Romantic music -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+    Browser kamu tidak mendukung audio.
+  </audio>
+
+</body>
+</html>
